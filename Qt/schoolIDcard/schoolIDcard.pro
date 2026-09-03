@@ -9,15 +9,24 @@ CONFIG += c++17
 SOURCES += \
     LogInPage.cpp \
     MainPage.cpp \
-    main.cpp
+    main.cpp \
+    Human.cpp \
+    student.cpp \
+    teacher.cpp \
+    staff.cpp
 
 HEADERS += \
     LogInPage.h \
-    MainPage.h
+    MainPage.h \
+    Human.h \
+    IdentityType.h \
+    student.h \
+    teacher.h \
+    staff.h
 
 FORMS += \
     LogInPage.ui \
-    MainPage.ui
+    mainpage.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
