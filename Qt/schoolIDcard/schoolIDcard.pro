@@ -9,6 +9,7 @@ CONFIG += c++17
 SOURCES += \
     LogInPage.cpp \
     MainPage.cpp \
+    admin.cpp \
     main.cpp \
     Human.cpp \
     student.cpp \
@@ -20,6 +21,7 @@ HEADERS += \
     MainPage.h \
     Human.h \
     IdentityType.h \
+    admin.h \
     student.h \
     teacher.h \
     staff.h

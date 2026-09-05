@@ -1,9 +1,10 @@
 #include "Human.h"
 
 // 构造函数：用“成员初始化列表”给所有成员赋值，避免未初始化。
-Human::Human(QString n, QString id, int y, int m, int d)
+Human::Human(QString n, QString id, int y, int m, int d,
+             is_Administration adm, IdentityType type)
     : Name(n), ID(id), Byear(y), Bmon(m), Bday(d),
-      type(IdentityType::Student), adm(is_Administration::No)
+      type(type), adm(adm)
 {
 }
 

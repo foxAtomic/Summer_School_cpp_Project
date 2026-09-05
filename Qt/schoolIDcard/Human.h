@@ -13,7 +13,9 @@ private:
 
 public:
     Human(QString n = "#", QString id = "999999999",
-          int y = 2026, int m = 9, int d = 3);
+          int y = 2026, int m = 9, int d = 3,
+          is_Administration adm = is_Administration::No,
+          IdentityType type = IdentityType::Student);
 
     QString GetName() const;
     QString GetId() const;
@@ -32,7 +34,7 @@ public:
     // 查询当前管理权限
     is_Administration GetAdm() const;
 
-    ~Human() = default;
+    virtual ~Human() = default;
 };
 
 #endif // HUMAN_H
